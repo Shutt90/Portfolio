@@ -2,7 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  align-items: center;
+  text-align: center;
 }
 
-.data {
+.num {
+  font-size: 150px;
+  border: solid black;
+}
+
+.final {
+  color: red;
+  font-size: 350px;
 }
