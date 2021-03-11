@@ -49,6 +49,24 @@ nav {
 }
 
 .project01 {
+}
+
+.project02 {
+  height: auto;
+  color: purple;
+  background-color: gold;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.project02:hover {
+  color: gold;
+  background-color: purple;
+}
+
+.project {
   height: auto;
   color: gold;
   background-color: purple;
@@ -58,14 +76,9 @@ nav {
   text-align: center;
 }
 
-.project02 {
-  height: auto;
-  color: red;
+.project:hover {
+  color: purple;
   background-color: gold;
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 5px;
-  text-align: center;
 }
 
 .pop {

@@ -9,6 +9,7 @@
   </head>
   <body>
     <h1>Countdown Game</h1>
+    <p class = "subtitle">Click the numbers you've used so far so you don't lose track</p>
     <h2>
       <p class = "numbers">
         <span class = "bignumber0 num">1</span>
@@ -18,12 +19,21 @@
         <span class = "lilnumber2 num">5</span>
         <span class = "lilnumber3 num">6</span>
       </p>
-      <button class = "calculate">Calculate</button>
+      <script>
+      function playAudio(url) {
+        new Audio(url).play()
+        }
+      </script>
+      <button class = "calculate buttons" onclick="playAudio('timersound.mp3')">Calculate</button>
+      <button class = "reset hidden buttons"><a href="C:/Users/liamp/Desktop/Projects/Website/Portfolio/Countdown/countdown.html">Reset</button></a>
 
       <div>
-        <p class = "summary">Try to make</p>
+        <p class = "summary hidden">Try to make
+        </p>
         <p class = "final"></p>
+        <p class = "summary hidden"></p>
       </div>
+      <div class = "timerText"></div>
     </h2>
     </form>
     <script src="script.js"></script>
