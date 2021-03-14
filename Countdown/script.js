@@ -9,6 +9,10 @@ const lilQuery2 = document.querySelector(`.lilnumber1`);
 const lilQuery3 = document.querySelector(`.lilnumber2`);
 const lilQuery4 = document.querySelector(`.lilnumber3`);
 
+const bigArrSelector = [bigQuery1, bigQuery2];
+
+const lilArrSelector = [lilQuery1, lilQuery2, lilQuery3, lilQuery4];
+
 document.querySelector(".calculate").addEventListener("click", function (e) {
   e.preventDefault();
 
@@ -50,7 +54,7 @@ document.querySelector(".calculate").addEventListener("click", function (e) {
     document.querySelector(`.lilnumber${[i]}`).textContent = lilArr[i];
   }
 
-  document.querySelector(".final").textContent = total(100, 900);
+  document.querySelector(".final").textContent = total(100, 999);
   //Show in spans ".numbers" the big/lil nums they have to work with
   //Show the total they need to work out on the screen - needs html too
 });
@@ -61,25 +65,37 @@ document.querySelector(".reset").addEventListener("click", function () {
   document.querySelector(".summary").classList.add("hidden");
 });
 
-bigQuery1.addEventListener("click", function () {
-  bigQuery1.classList.toggle("strike");
-});
+for (let index = 0; index < 2; index++) {
+  bigArrSelector[index].addEventListener("click", function () {
+    bigArrSelector[index].classList.toggle("strike");
+  });
+}
 
-bigQuery2.addEventListener("click", function () {
-  bigQuery2.classList.toggle("strike");
-});
+for (let index = 0; index < 4; index++) {
+  lilArrSelector[index].addEventListener("click", function () {
+    lilArrSelector[index].classList.toggle("strike");
+  });
+}
 
-lilQuery1.addEventListener("click", function () {
-  lilQuery1.classList.toggle("strike");
-});
+// bigQuery1.addEventListener("click", function () {
+//   bigQuery1.classList.toggle("strike");
+// });
 
-lilQuery2.addEventListener("click", function () {
-  lilQuery2.classList.toggle("strike");
-});
-lilQuery3.addEventListener("click", function () {
-  lilQuery3.classList.toggle("strike");
-});
+// bigQuery2.addEventListener("click", function () {
+//   bigQuery2.classList.toggle("strike");
+// });
 
-lilQuery4.addEventListener("click", function () {
-  lilQuery4.classList.toggle("strike");
-});
+// lilQuery1.addEventListener("click", function () {
+//   lilQuery1.classList.toggle("strike");
+// });
+
+// lilQuery2.addEventListener("click", function () {
+//   lilQuery2.classList.toggle("strike");
+// });
+// lilQuery3.addEventListener("click", function () {
+//   lilQuery3.classList.toggle("strike");
+// });
+
+// lilQuery4.addEventListener("click", function () {
+//   lilQuery4.classList.toggle("strike");
+// });
