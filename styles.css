@@ -31,7 +31,7 @@ nav {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 100vw;
   font-size: 1.5rem;
   position: relative;
 }
@@ -66,7 +66,7 @@ nav {
   color: purple;
   background-color: gold;
   border-radius: 5px;
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 5px;
   text-align: center;
 }
@@ -81,7 +81,7 @@ nav {
   color: gold;
   background-color: purple;
   border-radius: 5px;
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 5px;
   text-align: center;
 }
@@ -136,12 +136,13 @@ a:visited {
 }
 
 .contact {
-  font-size: 5rem;
+  font-size: 3rem;
   color: yellow;
   background-color: blue;
   border-radius: 10px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 50px;
+  box-shadow: -10px 10px;
 }
 
 .contact:hover {
