@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>myPortfolio</title>
-<div class="content"><nav><ul>
-        <li><a href="/index.html">Home</li></a>
-        <li><a href="/projects.html">Projects</li></a>
-        <li><a href="/contact.html">Contact</li></a>
-        </ul>
-    </nav>
  </head>
 <body>
-    <h1>Welcome to myPortfolio</h1>
-    <div class="text">
-    I am currently working on more projects to enhance my portfolio and add more features to the UI
-    <br>
-    <br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+    crossorigin="anonymous"></script>
+    <header>
+        <nav>
+            <h1 id = "top_left">Welcome to myPortfolio</h1>
+            <img class="hamburger" src="./hamburger.svg" alt="menu">
+        </nav>
+    </header>
+    <article>
+    <div class="main_img">
+        <img src="pexels-stas-knop-1261578.jpg" alt="background">
+        <h1 class="my_name">Liam Pugh</h1>
+    </div>
+    </article>
+    <div class="right_side_text">
     <p class = "transparent">I finally took the opportunity in late 2020 to pursue what I've always wanted to do... LEARN TO PROGRAM
         <br>
     Most people would of considered the lockdown of 2020/21 to be a bad thing, but being someone who always regretted not going to university and studying Computer Science I took it as an opportunity to pursue my dreams.<br>
-    I predominantly came from a background in sales, focusing on multiple client retenion and recruitment - Through my own intiive I decided that it was time to make the change I wanted, hang up the phone for the final time and pursue my dream career in programming. A few courses on Udemy, Freecodecamp, Codecademy, YouTube and books later, I'm now feeling confident that I can enter the job market and take on my first role as a junior developer. </p>
-         <div class = "skills"><br>
+    I predominantly came from a background in sales, focusing on multiple client retenion and recruitment - Through my own initive I decided that it was time to make the change I wanted, hang up the phone for the final time and pursue my dream career in programming. A few courses on Udemy, Freecodecamp, Codecademy, YouTube and books later, I'm now feeling confident that I can enter the job market and take on my first role as a junior developer. </p>
+    </div>
+        <div class="lower_links">
+         <div class = "skills">
             <img src="html75.png">
             <img src = "css75.png">
             <img src="js75.png">
@@ -32,9 +41,18 @@
             <a href="https://github.com/Shutt90"><img src="Github Link.png"></a>
             <a href="https://www.linkedin.com/in/liam-pugh-2102089b/"><img src="linkedin.png"></a>
         </div>
+    </div>
+        <div class="slider"></div>
+        <script src="./app.js"></script>
 </body>
 <footer>
     <p class = "copyright">Copyright &copy; Liam Pugh 2021</p>
 </div>
 </footer>
 </html>
+
+<!-- <ul>
+    <li><a href="/index.html">Home</li></a>
+    <li><a href="/projects.html">Projects</li></a>
+    <li><a href="/contact.html">Contact</li></a>
+    </ul> -->

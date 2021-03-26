@@ -5,18 +5,17 @@
   height: auto;
   margin: 0;
   padding: 0;
-  font-family: "sriracha";
+  font-family: "sriracha", sans-serif;
   text-align: center;
   justify-content: center;
 }
 
 nav {
-  font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  box-sizing: border-box;
-  border: 0.5rem solid black;
-  width: 180px;
-  left: 50px;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: black;
+  align-items: center;
 }
 
 .links {
@@ -24,15 +23,27 @@ nav {
   height: auto;
 }
 
-.content {
-  background-image: url("pexels-stas-knop-1261578.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  min-width: 100vw;
-  font-size: 1.5rem;
+.main_img {
+  height: 60%;
+  width: 100%;
   position: relative;
+}
+
+.main_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main_img::after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
 }
 
 .transparent {
@@ -169,7 +180,6 @@ a:visited {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: lightblue;
   background: linear-gradient(to left, #3f87a6, #ebf8e1, #f69d3c);
   z-index: -1;
 }
@@ -192,7 +202,6 @@ section {
   height: 80vh;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
 }
 
 .main_img {
@@ -226,4 +235,24 @@ section {
   top: 0;
   left: 0;
   opacity: 0.2;
+}
+
+.right_side_text {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  padding: 5rem;
+}
+
+.lower_links {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  justify-content: center;
+  text-align: center;
+  grid-column: 2/3;
+}
+
+footer {
+  top: 95%;
 }
