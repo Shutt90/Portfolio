@@ -5,45 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>myProjects</title>
-<div class="content"><nav><ul>
-        <li><a href="/index.html">Home</li></a>
-        <li><a href="/projects.html">Projects</li></a>
-        <li><a href="/contact.html">Contact</li></a>
-        </ul>
-    </nav>
+    <title>myPortfolio</title>
  </head>
-    <body>
-    <h1 class="main_head">
-        My only three projects so far!
-    </h1>
-    <br>    
-    <p><a href="/Countdown/countdown.html"><button class="project">Countdown Game</button></a>
-        <br>
-        <span>An unfinished project that I am currently looking to add more to, such as a timer and other features which making it more visually appealing</span>
-        </p>
-        <br>
-    <p><a href="/Tarkov/bccalc.html"><button class="project02">Tarkov Bitcoin Calculator</button></a>
-        <br>
-        <span>My first vanilla JavaScript project without any assistance.</span><br>
-        <span>This project focuses a fixed calculation which decreases time a bitcoin farm mines coins, depending on the input(Graphics Cards).</span>
-        <br>
-        <br>
-    <p><button class="project01 project">Fuze Sauces</button>
-        <br>
-        <span>This is a project me and my partner are working on using Shopify</span>
-        <br>
-        <span>You can click on the modal window to go to the website itself</span>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+    crossorigin="anonymous"></script>
+    <header>
+        <nav>
+            <h1 id = "top_left">Welcome to myPortfolio</h1>
+            <div class="hamburger">
+            <ul class="nav_links">
+                <li><a href="./index.html">Home</li></a>
+                <li><a href="./projects.html">Projects</li></a>
+                <li><a href="./contact.html">Contact</li></a>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <article>
+    <div class="main_img">
+        <img src="pexels-stas-knop-1261578.jpg" alt="background">
+        <h1 class="my_name">Liam Pugh</h1>
         <div class="hidden pop">
             <a href = "http://www.fuzesauces.com"><img src="project01.png"></a>
         </div>
-    </p>
-    <div class="overlay hidden"></div>
-    <br>
-    <br>
-    <script src="UI.js"></script>
+    </div>
+    </article>
+    <div class="right_side_text transparent">
+    <p>
+        <h3 class="subhead">Countdown Game</h3>
+        <span>An unfinished project that I am currently looking to add more to, such as a timer and other features which making it more visually appealing</span>
+        <br/>
+        <br/>
+        <h3>Tarkov Bitcoin Calculator</h3>
+        <span>My first and very basic, vanilla JavaScript project without any assistance.</span>
+        <span>This project focuses a fixed calculation which decreases time a bitcoin farm mines coins, depending on the input(Graphics Cards).
+        <br/>
+        <br/>
+        <h3>Fuze Sauces</h3>
+        <span>This is a project me and my partner are working on using Shopify</span>
+        <br>
+        <span>You can click on the modal window to go to the website itself</span>
+    </div>
+        <div class="lower_links">
+            <h1 class="main_head">
+                My only three projects so far!
+            </h1>
+            <br>    
+            <p><a href="/Countdown/countdown.html"><button class="project">Countdown Game</button></a>
+            <a href="/Tarkov/bccalc.html"><button class="project02">Tarkov Bitcoin Calculator</button></a>
+            <button class="project01 project">Fuze Sauces</button>
+    </div>
+        <div class="slider"></div>
+        <script src="./app.js"></script>
+        <script src="./UI.js"></script>
 </body>
 <footer>
-    <p>Copyright &copy; Liam Pugh 2021</p>
+    <p class = "copyright">Copyright &copy; Liam Pugh 2021</p>
 </footer>
 </html>
