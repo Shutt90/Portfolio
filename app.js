@@ -1,7 +1,6 @@
 const mainImg = document.querySelector(".main_img");
 const slider = document.querySelector(".slider");
 const topLeft = document.getElementById("#top_left");
-const hamburger = document.querySelector(".hamburger");
 const myName = document.querySelector(".my_name");
 const lowerLinks = document.querySelector(".lower_links");
 

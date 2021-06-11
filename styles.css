@@ -148,11 +148,11 @@ h3.responsive-text {
 }
 
 a {
-  color: goldenrod;
+  color: #ff8c00;
 }
 
 a:visited {
-  color: goldenrod;
+  color: #ff8c00;
 }
 
 .wrap {
@@ -165,7 +165,6 @@ a:visited {
   background-color: blue;
   border-radius: 10px;
   text-align: center;
-  margin-top: 50px;
   box-shadow: -10px 10px;
 }
 
